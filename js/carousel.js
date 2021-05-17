@@ -1,5 +1,7 @@
 import { Item } from "./item.min";
 
+const { Carousel } = ReactBootstrap;
+
 export const NTCarousel = (data, dataName) => {
   return (
     <Carousel>
