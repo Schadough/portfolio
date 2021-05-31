@@ -1,208 +1,249 @@
 /**
  *  
- * @typedef {{ link: string, imageSrc: string, alt: string, timeSpent: number }} Skill
+ * @typedef {{ name: string, url: string, imageSrc: string, alt: string, timeSpent: number }} Skill
  * @type {Array<Skill>}
  */
-export const skills = [
+export const languages = [
   {
-    link: "https://en.wikipedia.org/wiki/HTML",
-    imageSrc:
-      "../images/skills/html.svg",
-    alt: "Slide displaying the HTML Icon",
-    timeSpent: 3,
-  },
-  {
-    link: "https://en.wikipedia.org/wiki/CSS",
-    imageSrc:
-      "../images/skills/css.svg",
-    alt: "Slide displaying the CSS Icon",
-    timeSpent: 3,
-  },
-  {
-    link: "https://www.javascript.com/",
+    name: "Javascript",
+    url: "https://www.javascript.com/",
     imageSrc:
       "../images/skills/js.svg",
-    alt: "Slide displaying the Javascript Icon",
+    alt: "Slide displaying the Javascript Logo",
     timeSpent: 4,
   },
   {
-    link: "https://www.typescriptlang.org/",
+    name: "Typescript",
+    url: "https://www.typescriptlang.org/",
     imageSrc: "../images/skills/ts.svg",
-    alt: "Slide displaying the Typescript Icon",
+    alt: "Slide displaying the Typescript Logo",
     timeSpent: 3,
   },
   {
-    link: "https://www.java.com/en/",
+    name: "Java",
+    url: "https://www.java.com/en/",
     imageSrc: "../images/skills/java.svg",
-    alt: "Slide displaying the Java Icon",
-    timeSpent: 3,
+    alt: "Slide displaying the Java Logo",
+    timeSpent: 4,
   },
   {
-    link: "https://golang.org/",
+    name: "Golang",
+    url: "https://golang.org/",
     imageSrc: "../images/skills/go.svg",
-    alt: "Slide displaying the Golang Icon",
+    alt: "Slide displaying the Golang Logo",
     timeSpent: 1,
   },
   {
-    link: "https://www.python.org/",
-    imageSrc: "../images/skills/python.svg",
-    alt: "Slide displaying the Python Icon",
+    name: "Swift",
+    url: "https://developer.apple.com/swift/",
+    imageSrc: "../images/skills/swift.svg",
+    alt: "Slide displaying the Swift Logo",
+    timeSpent: 2,
+  },
+  {
+    name: "HTML",
+    url: "https://en.wikipedia.org/wiki/HTML",
+    imageSrc:
+      "../images/skills/html.svg",
+    alt: "Slide displaying the HTML Logo",
     timeSpent: 3,
   },
   {
-    link: "https://www.cplusplus.com/",
+    name: "CSS",
+    url: "https://en.wikipedia.org/wiki/CSS",
+    imageSrc:
+      "../images/skills/css.svg",
+    alt: "Slide displaying the CSS Logo",
+    timeSpent: 3,
+  },
+  {
+    name: "Python",
+    url: "https://www.python.org/",
+    imageSrc: "../images/skills/python.svg",
+    alt: "Slide displaying the Python Logo",
+    timeSpent: 3,
+  },
+  {
+    name: "C++",
+    url: "https://www.cplusplus.com/",
     imageSrc: "../images/skills/cpp.svg",
-    alt: "Slide displaying the C++ Icon",
+    alt: "Slide displaying the C++ Logo",
     timeSpent: 5,
   },
-  // React
+];
+
+export const frontend = [
   {
-    link: "https://reactjs.org/",
+    name: "React",
+    url: "https://reactjs.org/",
     imageSrc: "../images/skills/react.svg",
-    alt: "Slide displaying the C++ Icon",
+    alt: "Slide displaying the React Logo",
     timeSpent: 4,
   },
-  // React Native
   {
-    link: "https://reactnative.dev/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    altSrc: "../images/skills/react.svg",
-    timeSpent: 4,
     name: "React Native",
+    url: "https://reactnative.dev/",
+    imageSrc: "../images/skills/react.svg",
+    alt: "Slide displaying the React Logo",
+    timeSpent: 4,
   },
-  // Redux
   {
-    link: "https://redux.js.org/",
-    imageSrc: "https://cdn.worldvectorlogo.com/logos/redux.svg",
-    altSrc: "../images/skills/redux.svg",
-    timeSpent: 5,
     name: "Redux",
+    url: "https://redux.js.org/",
+    imageSrc: "../images/skills/redux.svg",
+    alt: "Slide displaying the Redux Logo",
+    timeSpent: 4,
   },
-  // Nextjs
   {
-    link: "https://nextjs.org/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
-    altSrc: "../images/skills/nextjs.svg",
+    name: "NextJS",
+    url: "https://nextjs.org/",
+    imageSrc: "../images/skills/nextjs.svg",
+    alt: "Slide displaying the NextJS Logo",
     timeSpent: 5,
-    name: "Next.js",
   },
-  // Gatsby // left off here
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "GatsbyJS",
+    url: "https://www.gatsbyjs.com/",
+    imageSrc: "../images/skills/gatsby.svg",
+    alt: "Slide displaying the Gatsby Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // Bootstrap
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "Bootstrap",
+    url: "https://getbootstrap.com/",
+    imageSrc: "../images/skills/bootstrap.svg",
+    alt: "Slide displaying the Bootstrap Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // Spring Boot
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
-    timeSpent: 5,
-    name: "C++",
+    name: "Android Development",
+    url: "https://developer.android.com/",
+    imageSrc: "../images/skills/android.svg",
+    alt: "Slide displaying the Android Logo",
+    timeSpent: 4,
   },
-  // Nodejs
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
-    timeSpent: 5,
-    name: "C++",
+    name: "iOS Development",
+    url: "https://developer.apple.com/",
+    imageSrc: "../images/skills/ios.svg",
+    alt: "Slide displaying the iOS Logo",
+    timeSpent: 4,
   },
-  // Express
+
+];
+export const backend = [
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "Spring",
+    url: "https://spring.io/",
+    imageSrc: "../images/skills/spring.svg",
+    alt: "Slide displaying the Spring Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // Fastify
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "NodeJs",
+    url: "https://nodejs.org/",
+    imageSrc: "../images/skills/nodejs.svg",
+    alt: "Slide displaying the NodeJS Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // Nestjs
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "Express Js",
+    url: "https://expressjs.com/",
+    imageSrc: "../images/skills/express.svg",
+    alt: "Slide displaying the Express Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // REST
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "Fastify",
+    url: "https://www.fastify.io/",
+    imageSrc: "../images/skills/fastify.svg",
+    alt: "Slide displaying the Fastify Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // GraphQL
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "NestJS",
+    url: "https://nestjs.com/",
+    imageSrc: "../images/skills/nestjs.svg",
+    alt: "Slide displaying the NestJS Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // gRPC
+];
+export const technologies = [
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "REST",
+    url: "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
+    imageSrc: "../images/skills/rest.svg",
+    alt: "Slide displaying the REST logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // Docker
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "GraphQL",
+    url: "https://graphql.org/",
+    imageSrc: "../images/skills/graphql.svg",
+    alt: "Slide displaying the GraphQL Logo",
     timeSpent: 5,
-    name: "C++",
   },
-  // Kubernetes
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
-    timeSpent: 5,
-    name: "C++",
+    name: "gRPC",
+    url: "https://grpc.io/",
+    imageSrc: "../images/skills/grpc.svg",
+    alt: "Slide displaying the gRPC logo",
+    timeSpent: 4,
   },
-  // AWS
   {
-    link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    name: "Docker",
+    url: "https://www.docker.com/",
+    imageSrc: "../images/skills/docker.svg",
+    alt: "Slide displaying the Docker logo",
     timeSpent: 5,
-    name: "C++",
+  },
+  {
+    name: "Kubernetes",
+    url: "https://kubernetes.io/",
+    imageSrc: "../images/skills/kubernetes.svg",
+    alt: "Slide displaying the Kubernetes Logo",
+    timeSpent: 5,
+  },
+  {
+    name: "Linux",
+    url: "https://www.linux.org/",
+    imageSrc: "../images/skills/linux.svg",
+    alt: "Slide displaying the Vim logo",
+    timeSpent: 3,
+  },
+  {
+    name: "AWS",
+    url: "https://aws.amazon.com/",
+    imageSrc: "../images/skills/aws.svg",
+    alt: "Slide displaying the AWS Logo",
+    timeSpent: 5,
+  },
+  {
+    name: "GCP",
+    url: "https://cloud.google.com/",
+    imageSrc: "../images/skills/gcp.svg",
+    alt: "Slide displaying the Google Cloud Platform Logo",
+    timeSpent: 5,
+  },
+  {
+    name: "Digital Ocean",
+    url: "https://cloud.google.com/",
+    imageSrc: "../images/skills/digitalocean.svg",
+    alt: "Slide displaying the Google Cloud Platform Logo",
+    timeSpent: 5,
+  },
+  {
+    name: "Netlify",
+    url: "https://cloud.google.com/",
+    imageSrc: "../images/skills/netlify.svg",
+    alt: "Slide displaying the Google Cloud Platform Logo",
+    timeSpent: 5,
+  },
+  {
+    name: "Vim",
+    url: "https://www.vim.org/",
+    imageSrc: "../images/skills/vim.svg",
+    alt: "Slide displaying the Vim logo",
+    timeSpent: 3,
   },
 ];
