@@ -1,23 +1,27 @@
-import { Item } from "./item.min";
+// @ts-ignore
+const { Container, Row, Carousel } = ReactBootstrap;
 
-const { Carousel } = ReactBootstrap;
+(() => {
+  const SkillCarousel = () => {
+    return (
+      <>
+        <Carousel className="container-md" nextLabel="" prevLabel="">
+          <Carousel.Item>
+            <h2 className="text-center text-light">4 Years Experience</h2>
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+              <img 
+                src="../images/skills/cpp.svg"
+                alt="picture of a c++ logo" 
+                className="d-block mx-auto h-25 w-25"
+              />
+            </a>
+          </Carousel.Item>
+        </Carousel>
+      </>
+    );
+  };
 
-export const NTCarousel = (data, dataName) => {
-  return (
-    <Carousel>
-      {data.map((item) => (
-        <Carousel.Item>
-          <Item
-            link={item.link}
-            imageSrc={item.imageSrc}
-            altSrc={item.altSrc}
-          />
-          <Carousel.Caption>
-            <h2>{dataName}</h2>
-            <p>Time Spent: {item.timeSpent.toString()} years</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
-  );
-};
+  // @ts-ignore
+  ReactDOM.render(<SkillCarousel />, document.querySelector("#skill-carousel"));
+})();
+

@@ -1,87 +1,66 @@
-export const languages = [
-  // html
+/**
+ *  
+ * @typedef {{ link: string, imageSrc: string, alt: string, timeSpent: number }} Skill
+ * @type {Array<Skill>}
+ */
+export const skills = [
   {
     link: "https://en.wikipedia.org/wiki/HTML",
     imageSrc:
-      "https://en.wikipedia.org/wiki/HTML#/media/File:HTML5_logo_and_wordmark.svg",
-    altSrc: "../images/skills/html.svg",
+      "../images/skills/html.svg",
+    alt: "Slide displaying the HTML Icon",
     timeSpent: 3,
-    name: "Html",
   },
-  // css
   {
     link: "https://en.wikipedia.org/wiki/CSS",
     imageSrc:
-      "https://en.wikipedia.org/wiki/CSS#/media/File:CSS3_logo_and_wordmark.svg",
-    altSrc: "../images/skills/css.svg",
+      "../images/skills/css.svg",
+    alt: "Slide displaying the CSS Icon",
     timeSpent: 3,
-    name: "Css",
   },
-  // js
   {
     link: "https://www.javascript.com/",
     imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
-    altSrc: "../images/skills/js.svg",
+      "../images/skills/js.svg",
+    alt: "Slide displaying the Javascript Icon",
     timeSpent: 4,
-    name: "Javascript",
   },
-  // ts https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg
   {
     link: "https://www.typescriptlang.org/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-    altSrc: "../images/skills/ts.svg",
+    imageSrc: "../images/skills/ts.svg",
+    alt: "Slide displaying the Typescript Icon",
     timeSpent: 3,
-    name: "Typescript",
   },
-  // java https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg
   {
     link: "https://www.java.com/en/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
-    altSrc: "../images/skills/java.svg",
+    imageSrc: "../images/skills/java.svg",
+    alt: "Slide displaying the Java Icon",
     timeSpent: 3,
-    name: "Java",
   },
-  // golang https://upload.wikimedia.org/wikipedia/commons/4/4d/Go_Logo_LightBlue.svg
   {
     link: "https://golang.org/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/4/4d/Go_Logo_LightBlue.svg",
-    altSrc: "../images/skills/go.svg",
+    imageSrc: "../images/skills/go.svg",
+    alt: "Slide displaying the Golang Icon",
     timeSpent: 1,
-    name: "Golang",
   },
-  // python https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg
   {
     link: "https://www.python.org/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg",
-    altSrc: "../images/skills/python.svg",
+    imageSrc: "../images/skills/python.svg",
+    alt: "Slide displaying the Python Icon",
     timeSpent: 3,
-    name: "Python",
   },
-  // c++ https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg
   {
     link: "https://www.cplusplus.com/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    altSrc: "../images/skills/cpp.svg",
+    imageSrc: "../images/skills/cpp.svg",
+    alt: "Slide displaying the C++ Icon",
     timeSpent: 5,
-    name: "C++",
   },
-];
-
-export const frontend = [
   // React
   {
     link: "https://reactjs.org/",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    altSrc: "../images/skills/react.svg",
+    imageSrc: "../images/skills/react.svg",
+    alt: "Slide displaying the C++ Icon",
     timeSpent: 4,
-    name: "React",
   },
   // React Native
   {
@@ -127,9 +106,6 @@ export const frontend = [
     timeSpent: 5,
     name: "C++",
   },
-];
-
-export const backend = [
   // Spring Boot
   {
     link: "https://www.cplusplus.com/",
