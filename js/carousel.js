@@ -11,7 +11,7 @@ const { Container, Row, Col, Carousel } = ReactBootstrap;
    */
   const CarouselComponent = React.memo(({skills}) => {
     return (
-      <Carousel className="container-md" nextLabel="" prevLabel="">
+      <Carousel className="container-md" controls={false} indicators={false}>
         {
           skills.map((item, index) => {
             return (
@@ -19,9 +19,13 @@ const { Container, Row, Col, Carousel } = ReactBootstrap;
                 <h2 className="sc-title text-center text-light">{item.name}: {item.timeSpent} Years Experience</h2>
                 <a href={item.url} target="_blank" rel="noopener noreferrer">
                   <img 
+                    style={{
+                      height: "25vh",
+                      paddingBlock: "1em"
+                    }}
                     src={item.imageSrc}
                     alt={item.alt}
-                    className="d-block mx-auto h-25 w-25"
+                    className="d-block mx-auto"
                   />
                 </a>
               </Carousel.Item>
@@ -37,15 +41,27 @@ const { Container, Row, Col, Carousel } = ReactBootstrap;
     return (
       <>
       <Container>
-        <Row>
-          <CarouselComponent 
-            skills={languages}
-          />
-        </Row>
-        <Row>
-          <Col>
-           <CarouselComponent 
+        <Row className="sc-row">
+          <Col lg style={{paddingBlock: "1em"}}>
+            <CarouselComponent 
+              skills={languages}
+            />
+          </Col>
+          <Col lg style={{paddingBlock: "1em"}}>
+            <CarouselComponent 
               skills={frontend}
+            />
+          </Col>
+        </Row>
+        <Row className="sc-row">
+          <Col lg style={{paddingBlock: "1em"}}>
+           <CarouselComponent 
+              skills={backend}
+           />
+          </Col>
+          <Col lg style={{paddingBlock: "1em"}}>
+           <CarouselComponent 
+              skills={technologies}
            />
           </Col>
         </Row>
