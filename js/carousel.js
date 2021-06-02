@@ -20,7 +20,8 @@ const { Container, Row, Col, Carousel } = ReactBootstrap;
                 <a href={item.url} target="_blank" rel="noopener noreferrer">
                   <img 
                     style={{
-                      height: "25vh",
+                      height: 200,
+                      width: 200,
                       paddingBlock: "1em"
                     }}
                     src={item.imageSrc}
@@ -192,7 +193,7 @@ const { Container, Row, Col, Carousel } = ReactBootstrap;
     {
       name: "iOS Development",
       url: "https://developer.apple.com/",
-      imageSrc: "../images/skills/ios.svg",
+      imageSrc: "../images/skills/apple.svg",
       alt: "Slide displaying the iOS Logo",
       timeSpent: 4,
     },
