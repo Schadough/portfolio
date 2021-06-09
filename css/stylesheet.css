@@ -2738,7 +2738,7 @@ hr {
   color: #ea4c89;
 }
 .social-icons li:hover.social-icons-github a, .social-icons.social-icons-colored li.social-icons-github a {
-  color: #333333;
+  color: #999;
 }
 .social-icons li:hover.social-icons-behance a, .social-icons.social-icons-colored li.social-icons-behance a {
   color: #053eff;
